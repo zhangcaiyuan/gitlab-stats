@@ -1,0 +1,52 @@
+{#
+    @author: zhangzhanqi
+    @description: 议题描述
+#}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh">
+<head>
+    <title>issues</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>项目</th>
+        <th>issue</th>
+        <th>描述</th>
+        <th>所属人</th>
+        <th>状态</th>
+        <th>指派人</th>
+        <th>创建时间</th>
+        <th>截止时间</th>
+        <th>关闭时间</th>
+        <th>标签</th>
+        <th>里程碑</th>
+        <th>里程碑描述</th>
+        <th>里程碑开始时间</th>
+        <th>里程碑截止时间</th>
+        <th>评论</th>
+    </tr>
+    {%for issue in issues %}
+        <tr>
+            <td>{{ issue.project_name }}</td>
+            <td>{{ issue.title }}</td>
+            <td>{{ issue.description }}</td>
+            <td>{{ issue.author }}</td>
+            <td>{{ issue.state }}</td>
+            <td>{{ issue.assignees }}</td>
+            <td>{{ issue.created_time }}</td>
+            <td>{{ issue.due_date }}</td>
+            <td>{{ issue.closed_time }}</td>
+            <td>{{ issue.labels }}</td>
+            <td>{{ issue.milestone_title }}</td>
+            <td>{{ issue.milestone_description }}</td>
+            <td>{{ issue.milestone_start_date }}</td>
+            <td>{{ issue.milestone_due_date }}</td>
+            <td>{{ issue.discussions }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

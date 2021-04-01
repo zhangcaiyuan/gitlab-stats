@@ -1,6 +1,6 @@
 import os
 
 
-GITLAB_URL = os.getenv('GITLAB_URL', "192.168.2.1")
-GITLAB_USER = os.getenv('GITLAB_USER', "xxx")
-GITLAB_TOKEN = os.getenv('GITLAB_TOKEN', "xxx")
+GITLAB_URL = os.getenv('GITLAB_URL', "https://x.gogingko.uk:8029")
+GITLAB_USER = os.getenv('GITLAB_USER', "macan")
+GITLAB_TOKEN = os.getenv('GITLAB_TOKEN', "GMto6DKZVHTkjyr_5haq")
