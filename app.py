@@ -24,7 +24,7 @@ async def get_projects():
     """
 
 
-@app.get("/issues/{ct}", response_class=HTMLResponse)
+@app.get("/issues", response_class=HTMLResponse)
 async def get_issues(request: Request, ct: str):
     print(ct)
     timestamp = time.mktime(time.strptime(ct, "%Y%m%d"))
